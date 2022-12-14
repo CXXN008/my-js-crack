@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<style type="text/css">
+    body {
+        background-color: #444;
+        overflow: hidden;
+    }
+
+    .linage {
+        fill: none;
+        stroke: black;
+    }
+
+    .marriage {
+        fill: none;
+        stroke: black;
+    }
+
+    .node {
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .nodeText {
+        height: 20px;
+        background-color: #aaa;
+        font: 10px sans-serif;
+    }
+
+    .marriageNode {
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    #graph {
+        user-select: none;
+        background-color: #333;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-dtree@2.4.1/dist/dTree.min.js"></script>
+
+<body>
+    <h1 style="text-align: center;color: blue;">逻辑对接进度 = <span id="info"></span></h1>
+    <div id="graph"></div>
+
+    <script>
+
+        const aa = {
+            "/welcome": 1,
+            "/": 1,
+            "/funds/fundState/totalFunds": 1,
+            "/funds/fundState/Userrechargerecord": 0,
+            "/funds/fundState/Usertransferrecord": 0,
+            "/funds/fundState/Userwithdrawalrecord": 0,
+            "/funds/fundState/Userbindingcollectionmethod": 0,
+            "/funds/fundState": 0,
+            "/funds": 0,
+            "/tradingMgm/realAcc/currentHolding": 0,
+            "/tradingMgm/realAcc/historyHolding": 0,
+            "/tradingMgm/realAcc/tradeMarketPrice": 0,
+            "/tradingMgm/realAcc/tradeRiskRule": 0,
+            "/tradingMgm/realAcc/historyMarketPrice": 0,
+            "/tradingMgm/realAcc/historyRiskRule": 0,
+            "/tradingMgm/realAcc": 0,
+            "/tradingMgm/simAcc/currentHolding": 0,
+            "/tradingMgm/simAcc/historyHolding": 0,
+            "/tradingMgm/simAcc/tradeMarketPrice": 0,
+            "/tradingMgm/simAcc/tradeRiskRule": 0,
+            "/tradingMgm/simAcc/historyMarketPrice": 0,
+            "/tradingMgm/simAcc/historyRiskRule": 0,
+            "/tradingMgm/simAcc": 0,
+            "/tradingMgm/aBookAcc/currentHolding": 0,
+            "/tradingMgm/aBookAcc/historyHolding": 0,
+            "/tradingMgm/aBookAcc/tradeMarketPrice": 0,
+            "/tradingMgm/aBookAcc/tradeRiskRule": 0,
+            "/tradingMgm/aBookAcc/historyMarketPrice": 0,
+            "/tradingMgm/aBookAcc/historyRiskRule": 0,
+            "/tradingMgm/aBookAcc": 0,
+            "/tradingsMgm/tradingType/tradingTypeSetting": 0,
+            "/tradingsMgm/tradingType": 0,
+            "/tradingsMgm/documentaryMgr/sysDocumentarySignal": 0,
+            "/tradingsMgm/documentaryMgr/sysDocumentaryUser": 0,
+            "/tradingsMgm/documentaryMgr/userDocumentarySignal": 0,
+            "/tradingsMgm/documentaryMgr/userDocumentaryAcc": 0,
+            "/tradingsMgm/documentaryMgr": 0,
+            "/tradingsMgm/agentDetails/commissionSettings": 0,
+            "/tradingsMgm/agentDetails/agencyLevel": 0,
+            "/tradingsMgm/agentDetails": 0,
+            "/tradingMgm/quotationMgr/quotationControl": 0,
+            "/tradingMgm/quotationMgr": 0,
+            "/tradingMgm": 0,
+            "/contentMgm/noficationSettings/bannerMgm": 0,
+            "/contentMgm/noficationSettings/popupMgm": 0,
+            "/contentMgm/noficationSettings/pmMgm": 0,
+            "/contentMgm/noficationSettings": 0,
+            "/contentMgm": 0,
+            "/todoMgm/todoMgm/chargeMgm": 0,
+            "/todoMgm/todoMgm/realNameAuthMgm": 0,
+            "/todoMgm/todoMgm/userDocumentarySignalAudit": 0,
+            "/todoMgm/todoMgm": 0,
+            "/todoMgm": 0,
+            "/userMgm/userMgm/realUser": 0,
+            "/userMgm/userMgm/onlineUser": 0,
+            "/userMgm/userMgm/simUser": 0,
+            "/userMgm/userMgm": 0,
+            "/userMgm": 0,
+            "/systemMgm/systemConfig/roleMgm": 1,
+            "/systemMgm/systemConfig/administorAccMgm": 1,
+            "/systemMgm/systemConfig/aBookMgm": 0,
+            "/systemMgm/systemConfig/versionControl": 0,
+            "/systemMgm/systemConfig/paymentMethod": 0,
+            "/systemMgm/systemConfig/registerSetting": 0,
+            "/systemMgm/systemConfig/protocolSetting": 0,
+            "/systemMgm/systemConfig": 0,
+            "/systemMgm/voiceMgm/clientLanguage": 0,
+            "/systemMgm/voiceMgm/backendLanguage": 0,
+            "/systemMgm/voiceMgm": 0,
+            "/systemMgm/commissionConfig/independentCommissionConfig": 0,
+            "/systemMgm/commissionConfig/backendLanguage": 0,
+            "/systemMgm/commissionConfig": 0,
+            "/systemMgm/others/clientAppearance": 0,
+            "/systemMgm/others/systemLogs": 0,
+            "/systemMgm/others": 0,
+            "/systemMgm": 0,
+        }
+
+        let count = 0, tn = 76
+        for (const i in aa) {
+            // tn++
+            if (Object.hasOwnProperty.call(aa, i)) {
+                const element = aa[i];
+                if (element) {
+                    count++
+                }
+
+            }
+        }
+        console.log(count);
+
+        document.querySelector('#info').textContent = `${count} / ${tn} (以路径统计)`
+
+        treeJson = d3.json("data.json", function (error, treeData) {
+            dTree.init(treeData,
+                {
+                    target: "#graph",
+                    debug: false,
+                    hideMarriageNodes: false,
+                    marriageNodeSize: 5,
+                    height: 600,
+                    width: 800,
+
+                    callbacks: {
+                        nodeClick: function (name, extra) {
+                            alert('Click: ' + name);
+                        },
+                        nodeRightClick: function (name, extra) {
+                            alert('Right-click: ' + name);
+                        },
+                        textRenderer: function (name, extra, textClass) {
+                            let cls = "background-color: #0f0;"
+                            if (!aa[extra]) {
+                                cls = ""
+                            }
+                            if (extra && extra.nickname)
+                                name = name + " (" + extra.nickname + ")";
+                            return "<div align='center' class='" + textClass + "' style=\"" + cls + "\">" + name + "</div>";
+                        },
+                        marriageClick: function (extra, id) {
+                            alert('Clicked marriage node' + id);
+                        },
+                        marriageRightClick: function (extra, id) {
+                            alert('Right-clicked marriage node' + id);
+                        },
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>

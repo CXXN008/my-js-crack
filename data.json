@@ -1,0 +1,1200 @@
+[{
+    "name":"Root",
+    "children":[
+    {
+        "extra": "/",
+        "name": "首页大屏",
+        "redirect": "/welcome",
+        "meta": {
+            "icon": "home-filled",
+            "title": "首页大屏",
+            "rank": 0
+        },
+        "children": [
+            {
+                "extra": "/welcome",
+                "name": "首页大屏",
+                "children": [
+                    {
+                        "extra": "/welcome",
+                        "name": "首页大屏"
+                    }
+        
+                ],
+                "id": 0,
+                "parentId": 0,
+                "pathList": [
+                    0,
+                    0
+                ],
+                "uniqueId": "0-0"
+            }
+        ],
+        "id": 0,
+        "parentId": null,
+        "pathList": [
+            0
+        ],
+        "uniqueId": 0
+    },
+    {
+        "extra": "/funds",
+        "meta": {
+            "icon": "information-line",
+            "title": "资产管理",
+            "rank": 1
+        },
+        "children": [
+            {
+                "extra": "/funds/fundState",
+                "redirect": "/funds/fundState/totalFunds",
+                "name": "用户资金情况",
+                "meta": {
+                    "title": "用户资金情况"
+                },
+                "children": [
+                    {
+                        "extra": "/funds/fundState/totalFunds",
+                        "name": "总资金",
+                        "meta": {
+                            "title": "总资金"
+                        },
+                        "id": 0,
+                        "parentId": 0,
+                        "pathList": [
+                            1,
+                            0,
+                            0
+                        ],
+                        "uniqueId": "1-0-0"
+                    },
+                    {
+                        "extra": "/funds/fundState/Userrechargerecord",
+                        "name": "用户充值记录",
+                        "meta": {
+                            "title": "用户充值记录"
+                        },
+                        "id": 1,
+                        "parentId": 0,
+                        "pathList": [
+                            1,
+                            0,
+                            1
+                        ],
+                        "uniqueId": "1-0-1"
+                    },
+                    {
+                        "extra": "/funds/fundState/Usertransferrecord",
+                        "name": "用户划转记录",
+                        "meta": {
+                            "title": "用户划转记录"
+                        },
+                        "id": 2,
+                        "parentId": 0,
+                        "pathList": [
+                            1,
+                            0,
+                            2
+                        ],
+                        "uniqueId": "1-0-2"
+                    },
+                    {
+                        "extra": "/funds/fundState/Userwithdrawalrecord",
+                        "name": "用户提现记录",
+                        "meta": {
+                            "title": "用户提现记录"
+                        },
+                        "id": 3,
+                        "parentId": 0,
+                        "pathList": [
+                            1,
+                            0,
+                            3
+                        ],
+                        "uniqueId": "1-0-3"
+                    },
+                    {
+                        "extra": "/funds/fundState/Userbindingcollectionmethod",
+                        "name": "用户绑定收款方式",
+                        "meta": {
+                            "title": "用户绑定收款方式"
+                        },
+                        "id": 4,
+                        "parentId": 0,
+                        "pathList": [
+                            1,
+                            0,
+                            4
+                        ],
+                        "uniqueId": "1-0-4"
+                    }
+                ],
+                "id": 0,
+                "parentId": 1,
+                "pathList": [
+                    1,
+                    0
+                ],
+                "uniqueId": "1-0"
+            }
+        ],
+        "id": 1,
+        "parentId": null,
+        "pathList": [
+            1
+        ],
+        "uniqueId": 1,
+        "name": "资产管理"
+    },
+    {
+        "extra": "/tradingMgm",
+        "meta": {
+            "icon": "information-line",
+            "title": "交易管理",
+            "rank": 2
+        },
+        "children": [
+            {
+                "extra": "/tradingMgm/realAcc",
+                "redirect": "/tradingMgm/realAcc/currentHolding",
+                "name": "真实账户",
+                "meta": {
+                    "title": "真实账户"
+                },
+                "children": [
+                    {
+                        "extra": "/tradingMgm/realAcc/currentHolding",
+                        "name": "当前持仓",
+                        "meta": {
+                            "title": "当前持仓"
+                        },
+                        "id": 0,
+                        "parentId": 0,
+                        "pathList": [
+                            2,
+                            0,
+                            0
+                        ],
+                        "uniqueId": "2-0-0"
+                    },
+                    {
+                        "extra": "/tradingMgm/realAcc/historyHolding",
+                        "name": "历史持仓",
+                        "meta": {
+                            "title": "历史持仓"
+                        },
+                        "id": 1,
+                        "parentId": 0,
+                        "pathList": [
+                            2,
+                            0,
+                            1
+                        ],
+                        "uniqueId": "2-0-1"
+                    },
+                    {
+                        "extra": "/tradingMgm/realAcc/tradeMarketPrice",
+                        "name": "委托交易 - 市价限价",
+                        "meta": {
+                            "title": "委托交易 - 市价限价"
+                        },
+                        "id": 2,
+                        "parentId": 0,
+                        "pathList": [
+                            2,
+                            0,
+                            2
+                        ],
+                        "uniqueId": "2-0-2"
+                    },
+                    {
+                        "extra": "/tradingMgm/realAcc/tradeRiskRule",
+                        "name": "委托交易 - 止盈止损",
+                        "meta": {
+                            "title": "委托交易 - 止盈止损"
+                        },
+                        "id": 3,
+                        "parentId": 0,
+                        "pathList": [
+                            2,
+                            0,
+                            3
+                        ],
+                        "uniqueId": "2-0-3"
+                    },
+                    {
+                        "extra": "/tradingMgm/realAcc/historyMarketPrice",
+                        "name": "历史交易 - 市价限价",
+                        "meta": {
+                            "title": "历史交易 - 市价限价"
+                        },
+                        "id": 4,
+                        "parentId": 0,
+                        "pathList": [
+                            2,
+                            0,
+                            4
+                        ],
+                        "uniqueId": "2-0-4"
+                    },
+                    {
+                        "extra": "/tradingMgm/realAcc/historyRiskRule",
+                        "name": "历史交易 - 止盈止损",
+                        "meta": {
+                            "title": "历史交易 - 止盈止损"
+                        },
+                        "id": 5,
+                        "parentId": 0,
+                        "pathList": [
+                            2,
+                            0,
+                            5
+                        ],
+                        "uniqueId": "2-0-5"
+                    }
+                ],
+                "id": 0,
+                "parentId": 2,
+                "pathList": [
+                    2,
+                    0
+                ],
+                "uniqueId": "2-0"
+            },
+            {
+                "extra": "/tradingMgm/simAcc",
+                "redirect": "/tradingMgm/simAcc/currentHolding",
+                "name": "模拟账户",
+                "meta": {
+                    "title": "模拟账户"
+                },
+                "children": [
+                    {
+                        "extra": "/tradingMgm/simAcc/currentHolding",
+                        "name": "当前持仓",
+                        "meta": {
+                            "title": "当前持仓"
+                        },
+                        "id": 0,
+                        "parentId": 1,
+                        "pathList": [
+                            2,
+                            1,
+                            0
+                        ],
+                        "uniqueId": "2-1-0"
+                    },
+                    {
+                        "extra": "/tradingMgm/simAcc/historyHolding",
+                        "name": "历史持仓",
+                        "meta": {
+                            "title": "历史持仓"
+                        },
+                        "id": 1,
+                        "parentId": 1,
+                        "pathList": [
+                            2,
+                            1,
+                            1
+                        ],
+                        "uniqueId": "2-1-1"
+                    },
+                    {
+                        "extra": "/tradingMgm/simAcc/tradeMarketPrice",
+                        "name": "委托交易 - 市价限价",
+                        "meta": {
+                            "title": "委托交易 - 市价限价"
+                        },
+                        "id": 2,
+                        "parentId": 1,
+                        "pathList": [
+                            2,
+                            1,
+                            2
+                        ],
+                        "uniqueId": "2-1-2"
+                    },
+                    {
+                        "extra": "/tradingMgm/simAcc/tradeRiskRule",
+                        "name": "委托交易 - 止盈止损",
+                        "meta": {
+                            "title": "委托交易 - 止盈止损"
+                        },
+                        "id": 3,
+                        "parentId": 1,
+                        "pathList": [
+                            2,
+                            1,
+                            3
+                        ],
+                        "uniqueId": "2-1-3"
+                    },
+                    {
+                        "extra": "/tradingMgm/simAcc/historyMarketPrice",
+                        "name": "历史交易 - 市价限价",
+                        "meta": {
+                            "title": "历史交易 - 市价限价"
+                        },
+                        "id": 4,
+                        "parentId": 1,
+                        "pathList": [
+                            2,
+                            1,
+                            4
+                        ],
+                        "uniqueId": "2-1-4"
+                    },
+                    {
+                        "extra": "/tradingMgm/simAcc/historyRiskRule",
+                        "name": "历史交易 - 止盈止损",
+                        "meta": {
+                            "title": "历史交易 - 止盈止损"
+                        },
+                        "id": 5,
+                        "parentId": 1,
+                        "pathList": [
+                            2,
+                            1,
+                            5
+                        ],
+                        "uniqueId": "2-1-5"
+                    }
+                ],
+                "id": 1,
+                "parentId": 2,
+                "pathList": [
+                    2,
+                    1
+                ],
+                "uniqueId": "2-1"
+            },
+            {
+                "extra": "/tradingMgm/aBookAcc",
+                "redirect": "/tradingMgm/aBookAcc/currentHolding",
+                "name": "A仓账户",
+                "meta": {
+                    "title": "A仓账户"
+                },
+                "children": [
+                    {
+                        "extra": "/tradingMgm/aBookAcc/currentHolding",
+                        "name": "当前持仓",
+                        "meta": {
+                            "title": "当前持仓"
+                        },
+                        "id": 0,
+                        "parentId": 2,
+                        "pathList": [
+                            2,
+                            2,
+                            0
+                        ],
+                        "uniqueId": "2-2-0"
+                    },
+                    {
+                        "extra": "/tradingMgm/aBookAcc/historyHolding",
+                        "name": "历史持仓",
+                        "meta": {
+                            "title": "历史持仓"
+                        },
+                        "id": 1,
+                        "parentId": 2,
+                        "pathList": [
+                            2,
+                            2,
+                            1
+                        ],
+                        "uniqueId": "2-2-1"
+                    },
+                    {
+                        "extra": "/tradingMgm/aBookAcc/tradeMarketPrice",
+                        "name": "委托交易 - 市价限价",
+                        "meta": {
+                            "title": "委托交易 - 市价限价"
+                        },
+                        "id": 2,
+                        "parentId": 2,
+                        "pathList": [
+                            2,
+                            2,
+                            2
+                        ],
+                        "uniqueId": "2-2-2"
+                    },
+                    {
+                        "extra": "/tradingMgm/aBookAcc/tradeRiskRule",
+                        "name": "委托交易 - 止盈止损",
+                        "meta": {
+                            "title": "委托交易 - 止盈止损"
+                        },
+                        "id": 3,
+                        "parentId": 2,
+                        "pathList": [
+                            2,
+                            2,
+                            3
+                        ],
+                        "uniqueId": "2-2-3"
+                    },
+                    {
+                        "extra": "/tradingMgm/aBookAcc/historyMarketPrice",
+                        "name": "历史交易 - 市价限价",
+                        "meta": {
+                            "title": "历史交易 - 市价限价"
+                        },
+                        "id": 4,
+                        "parentId": 2,
+                        "pathList": [
+                            2,
+                            2,
+                            4
+                        ],
+                        "uniqueId": "2-2-4"
+                    },
+                    {
+                        "extra": "/tradingMgm/aBookAcc/historyRiskRule",
+                        "name": "历史交易 - 止盈止损",
+                        "meta": {
+                            "title": "历史交易 - 止盈止损"
+                        },
+                        "id": 5,
+                        "parentId": 2,
+                        "pathList": [
+                            2,
+                            2,
+                            5
+                        ],
+                        "uniqueId": "2-2-5"
+                    }
+                ],
+                "id": 2,
+                "parentId": 2,
+                "pathList": [
+                    2,
+                    2
+                ],
+                "uniqueId": "2-2"
+            },
+            {
+                "extra": "/tradingsMgm/tradingType",
+                "redirect": "/tradingsMgm/tradingType/tradingTypeSetting",
+                "name": "交易品种设置",
+                "meta": {
+                    "title": "交易品种设置"
+                },
+                "children": [
+                    {
+                        "extra": "/tradingsMgm/tradingType/tradingTypeSetting",
+                        "name": "交易品种设置",
+                        "meta": {
+                            "title": "交易品种设置",
+                            "showParent": true
+                        },
+                        "id": 0,
+                        "parentId": 3,
+                        "pathList": [
+                            2,
+                            3,
+                            0
+                        ],
+                        "uniqueId": "2-3-0"
+                    }
+                ],
+                "id": 3,
+                "parentId": 2,
+                "pathList": [
+                    2,
+                    3
+                ],
+                "uniqueId": "2-3"
+            },
+            {
+                "extra": "/tradingsMgm/documentaryMgr",
+                "redirect": "/tradingsMgm/documentaryMgr/sysDocumentarySignal",
+                "name": "跟单管理",
+                "meta": {
+                    "title": "跟单管理"
+                },
+                "children": [
+                    {
+                        "extra": "/tradingsMgm/documentaryMgr/sysDocumentarySignal",
+                        "name": "系统跟单信号",
+                        "meta": {
+                            "title": "系统跟单信号",
+                            "showParent": true
+                        },
+                        "id": 0,
+                        "parentId": 4,
+                        "pathList": [
+                            2,
+                            4,
+                            0
+                        ],
+                        "uniqueId": "2-4-0"
+                    },
+                    {
+                        "extra": "/tradingsMgm/documentaryMgr/sysDocumentaryUser",
+                        "name": "系统跟单用户",
+                        "meta": {
+                            "title": "系统跟单用户",
+                            "showParent": true
+                        },
+                        "id": 1,
+                        "parentId": 4,
+                        "pathList": [
+                            2,
+                            4,
+                            1
+                        ],
+                        "uniqueId": "2-4-1"
+                    },
+                    {
+                        "extra": "/tradingsMgm/documentaryMgr/userDocumentarySignal",
+                        "name": "用户跟单信号",
+                        "meta": {
+                            "title": "用户跟单信号",
+                            "showParent": true
+                        },
+                        "id": 2,
+                        "parentId": 4,
+                        "pathList": [
+                            2,
+                            4,
+                            2
+                        ],
+                        "uniqueId": "2-4-2"
+                    },
+                    {
+                        "extra": "/tradingsMgm/documentaryMgr/userDocumentaryAcc",
+                        "name": "用户跟单账号",
+                        "meta": {
+                            "title": "用户跟单账号",
+                            "showParent": true
+                        },
+                        "id": 3,
+                        "parentId": 4,
+                        "pathList": [
+                            2,
+                            4,
+                            3
+                        ],
+                        "uniqueId": "2-4-3"
+                    }
+                ],
+                "id": 4,
+                "parentId": 2,
+                "pathList": [
+                    2,
+                    4
+                ],
+                "uniqueId": "2-4"
+            },
+            {
+                "extra": "/tradingsMgm/agentDetails",
+                "redirect": "/tradingsMgm/agentDetails/commissionSettings",
+                "name": "代理详情",
+                "meta": {
+                    "title": "代理详情"
+                },
+                "children": [
+                    {
+                        "extra": "/tradingsMgm/agentDetails/commissionSettings",
+                        "name": "佣金设置",
+                        "meta": {
+                            "title": "佣金设置",
+                            "showParent": true
+                        },
+                        "id": 0,
+                        "parentId": 5,
+                        "pathList": [
+                            2,
+                            5,
+                            0
+                        ],
+                        "uniqueId": "2-5-0"
+                    },
+                    {
+                        "extra": "/tradingsMgm/agentDetails/agencyLevel",
+                        "name": "代理层级",
+                        "meta": {
+                            "title": "代理层级",
+                            "showParent": true
+                        },
+                        "id": 1,
+                        "parentId": 5,
+                        "pathList": [
+                            2,
+                            5,
+                            1
+                        ],
+                        "uniqueId": "2-5-1"
+                    }
+                ],
+                "id": 5,
+                "parentId": 2,
+                "pathList": [
+                    2,
+                    5
+                ],
+                "uniqueId": "2-5"
+            },
+            {
+                "extra": "/tradingMgm/quotationMgr",
+                "redirect": "/tradingMgm/quotationMgr/quotationControl",
+                "name": "行情管理",
+                "meta": {
+                    "title": "行情管理"
+                },
+                "children": [
+                    {
+                        "extra": "/tradingMgm/quotationMgr/quotationControl",
+                        "name": "行情控制",
+                        "meta": {
+                            "title": "行情控制",
+                            "showParent": true
+                        },
+                        "id": 0,
+                        "parentId": 6,
+                        "pathList": [
+                            2,
+                            6,
+                            0
+                        ],
+                        "uniqueId": "2-6-0"
+                    }
+                ],
+                "id": 6,
+                "parentId": 2,
+                "pathList": [
+                    2,
+                    6
+                ],
+                "uniqueId": "2-6"
+            }
+        ],
+        "id": 2,
+        "parentId": null,
+        "pathList": [
+            2
+        ],
+        "uniqueId": 2,
+        "name": "交易管理"
+    },
+    {
+        "extra": "/contentMgm",
+        "meta": {
+            "icon": "information-line",
+            "title": "内容管理",
+            "rank": 3
+        },
+        "children": [
+            {
+                "extra": "/contentMgm/noficationSettings",
+                "redirect": "/contentMgm/noficationSettings/bannerMgm",
+                "name": "消息通知管理",
+                "meta": {
+                    "title": "消息通知管理"
+                },
+                "children": [
+                    {
+                        "extra": "/contentMgm/noficationSettings/bannerMgm",
+                        "name": "banner管理",
+                        "meta": {
+                            "title": "banner管理"
+                        },
+                        "id": 0,
+                        "parentId": 0,
+                        "pathList": [
+                            3,
+                            0,
+                            0
+                        ],
+                        "uniqueId": "3-0-0"
+                    },
+                    {
+                        "extra": "/contentMgm/noficationSettings/popupMgm",
+                        "name": "弹窗管理",
+                        "meta": {
+                            "title": "弹窗管理"
+                        },
+                        "id": 1,
+                        "parentId": 0,
+                        "pathList": [
+                            3,
+                            0,
+                            1
+                        ],
+                        "uniqueId": "3-0-1"
+                    },
+                    {
+                        "extra": "/contentMgm/noficationSettings/pmMgm",
+                        "name": "私信管理",
+                        "meta": {
+                            "title": "私信管理"
+                        },
+                        "id": 2,
+                        "parentId": 0,
+                        "pathList": [
+                            3,
+                            0,
+                            2
+                        ],
+                        "uniqueId": "3-0-2"
+                    }
+                ],
+                "id": 0,
+                "parentId": 3,
+                "pathList": [
+                    3,
+                    0
+                ],
+                "uniqueId": "3-0"
+            }
+        ],
+        "id": 3,
+        "parentId": null,
+        "pathList": [
+            3
+        ],
+        "uniqueId": 3,
+        "name": "内容管理"
+    },
+    {
+        "extra": "/todoMgm",
+        "meta": {
+            "icon": "information-line",
+            "title": "待办事项管理",
+            "rank": 3
+        },
+        "children": [
+            {
+                "extra": "/todoMgm/todoMgm",
+                "redirect": "/todoMgm/todoMgm/chargeMgm",
+                "name": "待办事项管理",
+                "meta": {
+                    "title": "待办事项管理"
+                },
+                "children": [
+                    {
+                        "extra": "/todoMgm/todoMgm/chargeMgm",
+                        "name": "充值审核",
+                        "meta": {
+                            "title": "充值审核"
+                        },
+                        "id": 0,
+                        "parentId": 0,
+                        "pathList": [
+                            4,
+                            0,
+                            0
+                        ],
+                        "uniqueId": "4-0-0"
+                    },
+                    {
+                        "extra": "/todoMgm/todoMgm/realNameAuthMgm",
+                        "name": "实名认证审核",
+                        "meta": {
+                            "title": "实名认证审核"
+                        },
+                        "id": 1,
+                        "parentId": 0,
+                        "pathList": [
+                            4,
+                            0,
+                            1
+                        ],
+                        "uniqueId": "4-0-1"
+                    },
+                    {
+                        "extra": "/todoMgm/todoMgm/userDocumentarySignalAudit",
+                        "name": "用户跟单信号Audit",
+                        "meta": {
+                            "title": "用户跟单信号Audit"
+                        },
+                        "id": 2,
+                        "parentId": 0,
+                        "pathList": [
+                            4,
+                            0,
+                            2
+                        ],
+                        "uniqueId": "4-0-2"
+                    }
+                ],
+                "id": 0,
+                "parentId": 4,
+                "pathList": [
+                    4,
+                    0
+                ],
+                "uniqueId": "4-0"
+            }
+        ],
+        "id": 4,
+        "parentId": null,
+        "pathList": [
+            4
+        ],
+        "uniqueId": 4,
+        "name": "待办事项管理"
+    },
+    {
+        "extra": "/userMgm",
+        "meta": {
+            "icon": "information-line",
+            "title": "用户管理",
+            "rank": 5
+        },
+        "children": [
+            {
+                "extra": "/userMgm/userMgm",
+                "redirect": "/userMgm/userMgm/realUser",
+                "name": "用户管理",
+                "meta": {
+                    "title": "用户管理"
+                },
+                "children": [
+                    {
+                        "extra": "/userMgm/userMgm/realUser",
+                        "name": "真实用户",
+                        "meta": {
+                            "title": "真实用户"
+                        },
+                        "id": 0,
+                        "parentId": 0,
+                        "pathList": [
+                            5,
+                            0,
+                            0
+                        ],
+                        "uniqueId": "5-0-0"
+                    },
+                    {
+                        "extra": "/userMgm/userMgm/onlineUser",
+                        "name": "在线用户",
+                        "meta": {
+                            "title": "在线用户"
+                        },
+                        "id": 1,
+                        "parentId": 0,
+                        "pathList": [
+                            5,
+                            0,
+                            1
+                        ],
+                        "uniqueId": "5-0-1"
+                    },
+                    {
+                        "extra": "/userMgm/userMgm/simUser",
+                        "name": "模拟用户",
+                        "meta": {
+                            "title": "模拟用户"
+                        },
+                        "id": 2,
+                        "parentId": 0,
+                        "pathList": [
+                            5,
+                            0,
+                            2
+                        ],
+                        "uniqueId": "5-0-2"
+                    }
+                ],
+                "id": 0,
+                "parentId": 5,
+                "pathList": [
+                    5,
+                    0
+                ],
+                "uniqueId": "5-0"
+            }
+        ],
+        "id": 5,
+        "parentId": null,
+        "pathList": [
+            5
+        ],
+        "uniqueId": 5,
+        "name": "用户管理"
+    },
+    {
+        "extra": "/systemMgm",
+        "meta": {
+            "icon": "information-line",
+            "title": "系统设置",
+            "rank": 6
+        },
+        "children": [
+            {
+                "extra": "/systemMgm/systemConfig",
+                "redirect": "/systemMgm/systemConfig/roleMgm",
+                "name": "系统配置",
+                "meta": {
+                    "title": "系统配置"
+                },
+                "children": [
+                    {
+                        "extra": "/systemMgm/systemConfig/roleMgm",
+                        "name": "角色管理",
+                        "meta": {
+                            "title": "角色管理"
+                        },
+                        "id": 0,
+                        "parentId": 0,
+                        "pathList": [
+                            6,
+                            0,
+                            0
+                        ],
+                        "uniqueId": "6-0-0"
+                    },
+                    {
+                        "extra": "/systemMgm/systemConfig/administorAccMgm",
+                        "name": "管理员账号",
+                        "meta": {
+                            "title": "管理员账号"
+                        },
+                        "id": 1,
+                        "parentId": 0,
+                        "pathList": [
+                            6,
+                            0,
+                            1
+                        ],
+                        "uniqueId": "6-0-1"
+                    },
+                    {
+                        "extra": "/systemMgm/systemConfig/aBookMgm",
+                        "name": "A仓设置",
+                        "meta": {
+                            "title": "A仓设置"
+                        },
+                        "id": 2,
+                        "parentId": 0,
+                        "pathList": [
+                            6,
+                            0,
+                            2
+                        ],
+                        "uniqueId": "6-0-2"
+                    },
+                    {
+                        "extra": "/systemMgm/systemConfig/versionControl",
+                        "name": "版本管理",
+                        "meta": {
+                            "title": "版本管理"
+                        },
+                        "id": 3,
+                        "parentId": 0,
+                        "pathList": [
+                            6,
+                            0,
+                            3
+                        ],
+                        "uniqueId": "6-0-3"
+                    },
+                    {
+                        "extra": "/systemMgm/systemConfig/paymentMethod",
+                        "name": "收款方式",
+                        "meta": {
+                            "title": "收款方式"
+                        },
+                        "id": 4,
+                        "parentId": 0,
+                        "pathList": [
+                            6,
+                            0,
+                            4
+                        ],
+                        "uniqueId": "6-0-4"
+                    },
+                    {
+                        "extra": "/systemMgm/systemConfig/registerSetting",
+                        "name": "注册设置",
+                        "meta": {
+                            "title": "注册设置"
+                        },
+                        "id": 5,
+                        "parentId": 0,
+                        "pathList": [
+                            6,
+                            0,
+                            5
+                        ],
+                        "uniqueId": "6-0-5"
+                    },
+                    {
+                        "extra": "/systemMgm/systemConfig/protocolSetting",
+                        "name": "协议配置",
+                        "meta": {
+                            "title": "协议配置"
+                        },
+                        "id": 6,
+                        "parentId": 0,
+                        "pathList": [
+                            6,
+                            0,
+                            6
+                        ],
+                        "uniqueId": "6-0-6"
+                    }
+                ],
+                "id": 0,
+                "parentId": 6,
+                "pathList": [
+                    6,
+                    0
+                ],
+                "uniqueId": "6-0"
+            },
+            {
+                "extra": "/systemMgm/voiceMgm",
+                "redirect": "/systemMgm/voiceMgm/clientLanguage",
+                "name": "语音管理",
+                "meta": {
+                    "title": "语音管理"
+                },
+                "children": [
+                    {
+                        "extra": "/systemMgm/voiceMgm/clientLanguage",
+                        "name": "客户端语言",
+                        "meta": {
+                            "title": "客户端语言"
+                        },
+                        "id": 0,
+                        "parentId": 1,
+                        "pathList": [
+                            6,
+                            1,
+                            0
+                        ],
+                        "uniqueId": "6-1-0"
+                    },
+                    {
+                        "extra": "/systemMgm/voiceMgm/backendLanguage",
+                        "name": "后台语言",
+                        "meta": {
+                            "title": "后台语言"
+                        },
+                        "id": 1,
+                        "parentId": 1,
+                        "pathList": [
+                            6,
+                            1,
+                            1
+                        ],
+                        "uniqueId": "6-1-1"
+                    }
+                ],
+                "id": 1,
+                "parentId": 6,
+                "pathList": [
+                    6,
+                    1
+                ],
+                "uniqueId": "6-1"
+            },
+            {
+                "extra": "/systemMgm/commissionConfig",
+                "redirect": "/systemMgm/commissionConfig/independentCommissionConfig",
+                "name": "佣金配置",
+                "meta": {
+                    "title": "佣金配置"
+                },
+                "children": [
+                    {
+                        "extra": "/systemMgm/commissionConfig/independentCommissionConfig",
+                        "name": "自主佣金配置",
+                        "meta": {
+                            "title": "自主佣金配置"
+                        },
+                        "id": 0,
+                        "parentId": 2,
+                        "pathList": [
+                            6,
+                            2,
+                            0
+                        ],
+                        "uniqueId": "6-2-0"
+                    },
+                    {
+                        "extra": "/systemMgm/commissionConfig/backendLanguage",
+                        "name": "托管佣金配置",
+                        "meta": {
+                            "title": "托管佣金配置"
+                        },
+                        "id": 1,
+                        "parentId": 2,
+                        "pathList": [
+                            6,
+                            2,
+                            1
+                        ],
+                        "uniqueId": "6-2-1"
+                    }
+                ],
+                "id": 2,
+                "parentId": 6,
+                "pathList": [
+                    6,
+                    2
+                ],
+                "uniqueId": "6-2"
+            },
+            {
+                "extra": "/systemMgm/others",
+                "redirect": "/systemMgm/others/clientAppearance",
+                "name": "其他",
+                "meta": {
+                    "title": "其他"
+                },
+                "children": [
+                    {
+                        "extra": "/systemMgm/others/clientAppearance",
+                        "name": "客户端外观配置",
+                        "meta": {
+                            "title": "客户端外观配置"
+                        },
+                        "id": 0,
+                        "parentId": 3,
+                        "pathList": [
+                            6,
+                            3,
+                            0
+                        ],
+                        "uniqueId": "6-3-0"
+                    },
+                    {
+                        "extra": "/systemMgm/others/systemLogs",
+                        "name": "系统日志",
+                        "meta": {
+                            "title": "系统日志"
+                        },
+                        "id": 1,
+                        "parentId": 3,
+                        "pathList": [
+                            6,
+                            3,
+                            1
+                        ],
+                        "uniqueId": "6-3-1"
+                    }
+                ],
+                "id": 3,
+                "parentId": 6,
+                "pathList": [
+                    6,
+                    3
+                ],
+                "uniqueId": "6-3"
+            }
+        ],
+        "id": 6,
+        "parentId": null,
+        "pathList": [
+            6
+        ],
+        "uniqueId": 6,
+        "name": "系统设置"
+    }
+]}]
