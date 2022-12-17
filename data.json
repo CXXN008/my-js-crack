@@ -819,6 +819,21 @@
                             2
                         ],
                         "uniqueId": "4-0-2"
+                    },
+                    {
+                        "extra": "/todoMgm/todoMgm/withdrawalAudit",
+                        "name": "提现审核",
+                        "meta": {
+                            "title": "提现审核"
+                        },
+                        "id": 3,
+                        "parentId": 0,
+                        "pathList": [
+                            4,
+                            0,
+                            3
+                        ],
+                        "uniqueId": "4-0-3"
                     }
                 ],
                 "id": 0,
