@@ -6,6 +6,8 @@
     body {
         background-color: #444;
         overflow: hidden;
+        padding: 0;
+        margin: 0;
     }
 
     .linage {
@@ -38,6 +40,15 @@
         user-select: none;
         background-color: #333;
     }
+    .bottom{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem;
+        color: #eee;
+        text-align: center;
+        background-color: #222;
+    }
 </style>
 
 <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
@@ -45,12 +56,13 @@
 <script src="https://cdn.jsdelivr.net/npm/d3-dtree@2.4.1/dist/dTree.min.js"></script>
 
 <body>
-    <h1 style="text-align: center;color: blue;">逻辑对接进度 = <span id="info"></span></h1>
+    <h1 style="text-align: center;color: blue;">页面逻辑对接进度 = <span id="info"></span></h1>
     <div id="graph"></div>
-
+    <div class="bottom">当前处理⌛：表单校验（提交非空判断、最大字符...）规则编写，动态国际化语言框架处理</div> 
     <script>
 
         const aa = {
+            ".":1,
             "/welcome": 1,
             "/": 1,
             "/funds/fundState/totalFunds": 1,
@@ -100,19 +112,19 @@
             "/contentMgm/noficationSettings/aboutUs": 1,
             "/contentMgm/noficationSettings": 1,
             "/contentMgm": 1,
-            "/todoMgm/todoMgm/chargeMgm": 0,
-            "/todoMgm/todoMgm/realNameAuthMgm": 0,
-            "/todoMgm/todoMgm/userDocumentarySignalAudit": 0,
-            "/todoMgm/todoMgm/withdrawalAudit": 0,
-            "/todoMgm/todoMgm": 0,
-            "/todoMgm": 0,
+            "/todoMgm/todoMgm/chargeMgm": 1,
+            "/todoMgm/todoMgm/realNameAuthMgm": 1,
+            "/todoMgm/todoMgm/userDocumentarySignalAudit": 1,
+            "/todoMgm/todoMgm/withdrawalAudit": 1,
+            "/todoMgm/todoMgm": 1,
+            "/todoMgm": 1,
             "/userMgm/userMgm/realUser": 0,
             "/userMgm/userMgm/onlineUser": 0,
             "/userMgm/userMgm/simUser": 0,
             "/userMgm/userMgm": 0,
             "/userMgm": 0,
-            "/systemMgm/systemConfig/roleMgm": 1,
-            "/systemMgm/systemConfig/administorAccMgm": 1,
+            "/systemMgm/systemConfig/roleMgm": 0,
+            "/systemMgm/systemConfig/administorAccMgm": 0,
             "/systemMgm/systemConfig/aBookMgm": 0,
             "/systemMgm/systemConfig/versionControl": 0,
             "/systemMgm/systemConfig/paymentMethod": 0,
@@ -131,7 +143,7 @@
             "/systemMgm": 0,
         }
 
-        let count = 0, tn = 77
+        let count = 0, tn = 79
         for (const i in aa) {
             // tn++
             if (Object.hasOwnProperty.call(aa, i)) {
