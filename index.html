@@ -57,10 +57,10 @@
 <script src="https://cdn.jsdelivr.net/npm/d3-dtree@2.4.1/dist/dTree.min.js"></script>
 
 <body>
-    <h1 style="text-align: center;color: gray;">页面逻辑对接进度 = <span id="info"></span> <span style="color: green;">done <span style="color: #0f0;">✔</span> </span>
+    <h1 style="text-align: center;color: gray;">页面 = <span id="info"></span> <span style="color: green;">done <span style="color: #0f0;">✔</span> </span>
     </h1>
     <div id="graph"></div>
-    <div class="bottom">current working⌛：表单校验（提交非空判断、最大字符...）规则编写，动态国际化语言框架处理</div>
+    <div class="bottom">current working⌛：表单校验，国际化</div>
     <script>
 
         const aa = {
@@ -180,7 +180,7 @@
                         textRenderer: function (name, extra, textClass) {
                             let cls = "background-color: #0f0;"
                             if (!aa[extra]) {
-                                cls = ""
+                                cls = "background-color: #09f;"
                             }
                             if (extra && extra.nickname)
                                 name = name + " (" + extra.nickname + ")";
