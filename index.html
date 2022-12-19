@@ -40,7 +40,8 @@
         user-select: none;
         background-color: #333;
     }
-    .bottom{
+
+    .bottom {
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -56,13 +57,14 @@
 <script src="https://cdn.jsdelivr.net/npm/d3-dtree@2.4.1/dist/dTree.min.js"></script>
 
 <body>
-    <h1 style="text-align: center;color: blue;">页面逻辑对接进度 = <span id="info"></span></h1>
+    <h1 style="text-align: center;color: gray;">页面逻辑对接进度 = <span id="info"></span> <span style="color: green;">done <span style="color: #0f0;">✔</span> </span>
+    </h1>
     <div id="graph"></div>
-    <div class="bottom">当前处理⌛：表单校验（提交非空判断、最大字符...）规则编写，动态国际化语言框架处理</div> 
+    <div class="bottom">current working⌛：表单校验（提交非空判断、最大字符...）规则编写，动态国际化语言框架处理</div>
     <script>
 
         const aa = {
-            ".":1,
+            ".": 1,
             "/welcome": 1,
             "/": 1,
             "/funds/fundState/totalFunds": 1,
@@ -100,11 +102,11 @@
             "/tradingsMgm/documentaryMgr/userDocumentarySignal": 1,
             "/tradingsMgm/documentaryMgr/userDocumentaryAcc": 1,
             "/tradingsMgm/documentaryMgr": 1,
-            "/tradingsMgm/agentDetails/commissionSettings":1,
+            "/tradingsMgm/agentDetails/commissionSettings": 1,
             "/tradingsMgm/agentDetails/agencyLevel": 1,
             "/tradingsMgm/agentDetails": 1,
             "/tradingMgm/quotationMgr/quotationControl": 1,
-            "/tradingMgm/quotationMgr":1,
+            "/tradingMgm/quotationMgr": 1,
             "/tradingMgm": 1,
             "/contentMgm/noficationSettings/bannerMgm": 1,
             "/contentMgm/noficationSettings/popupMgm": 1,
@@ -118,29 +120,29 @@
             "/todoMgm/todoMgm/withdrawalAudit": 1,
             "/todoMgm/todoMgm": 1,
             "/todoMgm": 1,
-            "/userMgm/userMgm/realUser": 0,
-            "/userMgm/userMgm/onlineUser": 0,
-            "/userMgm/userMgm/simUser": 0,
-            "/userMgm/userMgm": 0,
-            "/userMgm": 0,
-            "/systemMgm/systemConfig/roleMgm": 0,
-            "/systemMgm/systemConfig/administorAccMgm": 0,
-            "/systemMgm/systemConfig/aBookMgm": 0,
-            "/systemMgm/systemConfig/versionControl": 0,
-            "/systemMgm/systemConfig/paymentMethod": 0,
-            "/systemMgm/systemConfig/registerSetting": 0,
-            "/systemMgm/systemConfig/protocolSetting": 0,
-            "/systemMgm/systemConfig": 0,
-            "/systemMgm/voiceMgm/clientLanguage": 0,
-            "/systemMgm/voiceMgm/backendLanguage": 0,
-            "/systemMgm/voiceMgm": 0,
-            "/systemMgm/commissionConfig/independentCommissionConfig": 0,
-            "/systemMgm/commissionConfig/backendLanguage": 0,
-            "/systemMgm/commissionConfig": 0,
-            "/systemMgm/others/clientAppearance": 0,
-            "/systemMgm/others/systemLogs": 0,
-            "/systemMgm/others": 0,
-            "/systemMgm": 0,
+            "/userMgm/userMgm/realUser": 1,
+            "/userMgm/userMgm/onlineUser": 1,
+            "/userMgm/userMgm/simUser": 1,
+            "/userMgm/userMgm": 1,
+            "/userMgm": 1,
+            "/systemMgm/systemConfig/roleMgm": 1,
+            "/systemMgm/systemConfig/administorAccMgm": 1,
+            "/systemMgm/systemConfig/aBookMgm": 1,
+            "/systemMgm/systemConfig/versionControl": 1,
+            "/systemMgm/systemConfig/paymentMethod": 1,
+            "/systemMgm/systemConfig/registerSetting": 1,
+            "/systemMgm/systemConfig/protocolSetting": 1,
+            "/systemMgm/systemConfig": 1,
+            "/systemMgm/voiceMgm/clientLanguage": 1,
+            "/systemMgm/voiceMgm/backendLanguage": 1,
+            "/systemMgm/voiceMgm": 1,
+            "/systemMgm/commissionConfig/independentCommissionConfig": 1,
+            "/systemMgm/commissionConfig/backendLanguage": 1,
+            "/systemMgm/commissionConfig": 1,
+            "/systemMgm/others/clientAppearance": 1,
+            "/systemMgm/others/systemLogs": 1,
+            "/systemMgm/others": 1,
+            "/systemMgm": 1,
         }
 
         let count = 0, tn = 79
